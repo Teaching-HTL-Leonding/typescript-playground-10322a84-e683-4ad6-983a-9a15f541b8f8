@@ -24,4 +24,5 @@ function setup() {
     circle(1150, 250, 350)
     circle(1250, 400, 350)
 
+    //Fertig :)
 }
