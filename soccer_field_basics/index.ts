@@ -1,11 +1,10 @@
-// It must be possible to scale the entire field by changing the value of the constant SCALE.
+function setup() {
+    // It must be possible to scale the entire field by changing the value of the constant SCALE.
 // E.g. a SCALE value of 2 will create a small image, while a SCALE value of 10 will create a large image.
 const SCALE = 5;
 
 // Margin around the field (i.e. distance from edge to the field)
 const MARGIN = 4;
-
-function setup() {
     // We must calculate the size of the canvas using the constants.
     // Note that we assume that the soccer field has a width of 100m
     // and a height of 70m.
@@ -32,6 +31,7 @@ function setup() {
 
     fill("White")
     circle(90, 155, 5)
+    circle(330, 155, 5)
 
 
     push();
