@@ -15,7 +15,9 @@ function setup() {
   stroke("yellow")
   circle(350, 150, 65)
   
-  fill("darkgreen")
-  arc()
+  fill("green")
+  stroke("green")
+  strokeWeight(20)
+  arc(425, 300, 25, 200, )
 
 }
