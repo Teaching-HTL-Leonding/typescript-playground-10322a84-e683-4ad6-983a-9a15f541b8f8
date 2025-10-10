@@ -33,7 +33,7 @@ function setup() {
   circle(110, 190, DIAMETER2)
   fill("yellow")
   stroke("yellow")
-  circle(100, 150, 65)
+  circle(100, 140, 65)
 
   noFill()
   stroke("green")
