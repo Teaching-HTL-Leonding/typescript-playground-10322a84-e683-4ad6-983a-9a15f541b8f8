@@ -1,4 +1,5 @@
 const DIAMETER = 80
+const DIAMETER2 = 70
 
 function setup() {
   createCanvas(500, 500)
@@ -8,9 +9,9 @@ function setup() {
   noFill()
   stroke("green")
   strokeWeight(20)
-  arc(180, 300, 500, 500, -45, 45)
+  arc(165, 300, 500, 500, -45, 45)
 
-strokeWeight(1)
+  strokeWeight(1)
   fill("lightgreen")
   stroke("black")
   circle(400, 150, DIAMETER)
@@ -22,6 +23,9 @@ strokeWeight(1)
   fill("yellow")
   stroke("yellow")
   circle(350, 150, 65)
-  
+
+  circle(100, 150, 65)
+  circle(150, 150, DIAMETER2)
+
 
 }
