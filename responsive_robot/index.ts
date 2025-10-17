@@ -24,4 +24,9 @@ function setup() {
   const RightEyeCenterY = headY + headHeight * 0.25
   const RightEyeDiameter = min(headWidth, headHeight) * 0.2
   circle(RightEyeCenterX, RightEyeCenterY, RightEyeDiameter)
+
+  //Mouth
+  const LeftEyeCenterX = headX + headWidth * 0.25
+  const LeftEyeCenterX = headY + headHeight * 0,7
+  const MouthWidth =
 }
