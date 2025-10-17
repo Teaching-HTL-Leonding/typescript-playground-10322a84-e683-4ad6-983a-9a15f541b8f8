@@ -20,7 +20,7 @@ function setup() {
   circle(LeftEyeCenterX, LeftEyeCenterY, LeftEyeDiameter)
 
   //Right eye
-  const RightEyeCenterX = headX + headWidth * 0.25
+  const RightEyeCenterX = headX + headWidth * 0.75
   const RightEyeCenterY = headY + headHeight * 0.25
   const RightEyeDiameter = min(headWidth, headHeight) * 0.2
   circle(RightEyeCenterX, RightEyeCenterY, RightEyeDiameter)
