@@ -26,7 +26,10 @@ function setup() {
   circle(RightEyeCenterX, RightEyeCenterY, RightEyeDiameter)
 
   //Mouth
-  const LeftEyeCenterX = headX + headWidth * 0.25
-  const LeftEyeCenterX = headY + headHeight * 0,7
-  const MouthWidth =
+  fill("white")
+  const MouthCenterX = headX + headWidth * 0.25
+  const MouthCenterY = headY + headHeight * 0.7
+  const MouthWidth = min(headWidth, headHeight) * 0.5
+  const MouthHeight = min(headWidth, headHeight) * 0.1
+  rect(MouthCenterX, MouthCenterY, MouthWidth, MouthHeight)
 }
