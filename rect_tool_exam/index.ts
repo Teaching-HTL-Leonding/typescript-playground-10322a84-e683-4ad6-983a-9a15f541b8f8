@@ -13,13 +13,15 @@ function mouseMoved() {
     rectMode(CENTER);
     let w = (width / 2 - mouseX) * 2
     let h = (height / 2 - mouseY) * 2
-    rect(width / 2, height / 2, w, h);
+    rect(width / 2, height / 2, w, h)
 
+    //Fläche
     let a = w * h
     noStroke();
     fill("white");
     text(`Area = ${abs(a)}`, width - 390, height);
 
+    //Diagonalen
     stroke("grey")
     line(mouseX, mouseY, mouseX + w, mouseY + h)
     line(mouseX, mouseY + h, mouseX + w, mouseY)
