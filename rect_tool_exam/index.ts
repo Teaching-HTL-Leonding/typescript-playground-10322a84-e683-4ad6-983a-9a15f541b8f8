@@ -14,7 +14,6 @@ function mouseMoved() {
     rectMode(CENTER);
     let w = (width / 2 - mouseX) * 2
     let h = (height / 2 - mouseY) * 2
-    rect(width / 2, height / 2, w, h)
 
 
     //Fläche
@@ -45,7 +44,7 @@ function mouseMoved() {
     stroke("black")
     let x = w
     let y = h
-    text(`${x}`, w/w, h/h)
-    text(`${y}`, w/2, h/2)
+    text(`${abs(x)}`, width / 2 - w / 2 - 25, height / 2 - 5);
+    text(`${abs(y)}`, width / 2, height / 2 - h / 2 - 5);
 
 }
