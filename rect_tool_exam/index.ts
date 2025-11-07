@@ -10,11 +10,9 @@ function mouseMoved() {
     stroke("white");
     strokeWeight(3);
 
-
     rectMode(CENTER);
     let w = (width / 2 - mouseX) * 2
     let h = (height / 2 - mouseY) * 2
-
 
     //Fläche
     let a = w * h
@@ -22,12 +20,10 @@ function mouseMoved() {
     fill("white");
     text(`Area = ${abs(a)}`, width - 390, height);
 
-
     //Diagonalen
     stroke("grey")
     line(mouseX, mouseY, mouseX + w, mouseY + h)
     line(mouseX, mouseY + h, mouseX + w, mouseY)
-
 
     //Farben
     stroke("yellow")
@@ -46,5 +42,4 @@ function mouseMoved() {
     let y = h
     text(`${abs(x)}`, width/2 - w / 2 - 5, height/2 - 5);
     text(`${abs(y)}`, width/2, height/2 - h/2 - 5);
-
 }
