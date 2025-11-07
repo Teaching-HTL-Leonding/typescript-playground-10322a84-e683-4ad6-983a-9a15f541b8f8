@@ -44,7 +44,7 @@ function mouseMoved() {
     stroke("black")
     let x = w
     let y = h
-    text(`${x}`, width/2 - w / 2 - 5, height/2 - 5);
-    text(`${y}`, width/2, height/2 - h/2 - 5);
+    text(`${abs(x)}`, width/2 - w / 2 - 5, height/2 - 5);
+    text(`${abs(y)}`, width/2, height/2 - h/2 - 5);
 
 }
