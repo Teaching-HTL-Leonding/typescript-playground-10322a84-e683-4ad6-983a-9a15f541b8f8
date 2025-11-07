@@ -15,5 +15,8 @@ function mouseMoved() {
     let h = (height/2 - mouseY) * 2
     rect(width/2, height/2, w, h)
 
-    
+    let a = w * h
+    noStroke()
+    fill("white")
+    text(`Area = ${abs(a)}`, width-390, height)
 }
