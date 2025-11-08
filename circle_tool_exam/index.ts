@@ -1,5 +1,5 @@
 function setup() {
-    createCanvas(400, 200);
+    createCanvas(670, 670);
     background("black");
     angleMode(DEGREES);
 }
@@ -41,5 +41,7 @@ function mouseMoved() {
     let x = w
     let y = h
     text(`x = ${abs(x)}`, width/2, height/2 - h/2 - 5);
+    text(`x = ${abs(x)}`, width/2, height/2 + h/2 + 5);
     text(`y = ${abs(y)}`, width/2 - w/2 - 5, height/2);
+    text(`y = ${abs(y)}`, width/2 + w/2 + 5, height/2);
 }
