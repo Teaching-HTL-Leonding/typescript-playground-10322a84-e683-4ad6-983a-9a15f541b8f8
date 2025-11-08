@@ -6,20 +6,40 @@ function setup() {
 
 function mouseMoved() {
     background("black");
+    noFill();
     stroke("white");
     strokeWeight(3);
-    noFill();
 
-    let w = (mouseX-width/2) * 2
-    let h = (mouseY-height/2) * 2
-    ellipse(width/2, height/2, w, h);
-    line(width/2 - w/2, height/2, width/2 + w/2, height/2)
-    line(width/2, height/2 - h/2, width/2, height/2 + h/2)
+    rectMode(CENTER);
+    let w = (width / 2 - mouseX) * 2
+    let h = (height / 2 - mouseY) * 2
 
-    let a = w/2 * h/2  * Math.PI;
-
+    //Fläche
+    let a = w * h
     noStroke();
     fill("white");
-    text(`Area = ${abs(a)}`, 10, 190);
+    text(`Area = ${abs(a)}`, width - 390, height);
 
+    //Diagonalen
+    stroke("grey")
+    line(mouseX, mouseY, mouseX + w, mouseY + h)
+    line(mouseX, mouseY + h, mouseX + w, mouseY)
+
+    //Farben
+    stroke("yellow")
+    line(mouseX, mouseY + h, mouseX + w, mouseY + h)
+    stroke("aqua")
+    line(mouseX + w, mouseY + h, mouseX + w, mouseY)
+    stroke("green")
+    line(mouseX + w, mouseY, mouseX, mouseY)
+    stroke("red")
+    line(mouseX, mouseY, mouseX, mouseY + h)
+
+    //Länge und Breite des Rechtecks
+    fill("white")
+    stroke("black")
+    let x = w
+    let y = h
+    text(`x = ${abs(x)}`, width/2, height/2 - h/2 - 5);
+    text(`y = ${abs(y)}`, width/2 - w/2 - 5, height/2);
 }
