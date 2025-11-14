@@ -1,18 +1,23 @@
 function setup() {
-    createCanvas(500,500)
-    background("black")
-    colorMode(HSB)
+    createCanvas(400, 400)
+    background("hotpink")
 }
 
 let x: number = 0
-let colorHue: number = 0
+let direction: number = 3
 
 function draw() {
-    background("black")
-    noStroke()
-    fill(colorHue, 100, 100)
-    colorHue = (colorHue+1) % 360
-    circle(x, x, x)
-    x = x + 1
-    x = x % 500
+    background("hotpink")
+    fill("darkblue")
+    circle(x, 200, 50)
+    x+= direction
+
+    // === gleich
+    // !== nicht gleich
+    // >, >=, <, <= Vergleiche
+    if (x >= width) { direction = -3 }
+    if (x === 0) {direction = 3 }
 }
+
+//Bedingungen
+//if-Statements
