@@ -15,7 +15,6 @@ function setup() {
     rectMode(CENTER)
     fill("black")
     rect(width / 2, height / 2, 170, 50)
-
 }
 
 function mouseClicked() {
@@ -25,12 +24,39 @@ function mouseClicked() {
     noStroke()
     fill("white")
     textSize(30)
+    textStyle(BOLD)
     textAlign(CENTER, CENTER)
 
     let message: string
-    if (mouseX < ) {
+
+    if (mouseX < width / 2) {
+        //Linke Hälfte
+
+        if (mouseY < height / 2) {
+            //Obere Hälfte
+            message = "Yellow"
+        } else {
+            //Untere Hälfte
+            message = "Blue"
+        }
 
     }
+
+    if (mouseX > width / 2) {
+        //Linke Hälfte
+
+        if (mouseY < height / 2) {
+            //Obere Hälfte
+            message = "Green"
+        } else {
+            //Untere Hälfte
+            message = "Red"
+        }
+
+    }
+
+
+
 
 
 
