@@ -52,7 +52,4 @@ function setup() {
     circle(width / 4, height / 4 * 2, dicePointDiameter);
     circle(width / 4 * 3, height / 4 * 2, dicePointDiameter);
   }
-
-
-  let 1 = 
 }
