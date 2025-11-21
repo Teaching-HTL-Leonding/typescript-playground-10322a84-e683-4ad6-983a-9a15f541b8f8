@@ -28,7 +28,7 @@ function mouseClicked() {
     textAlign(CENTER, CENTER)
 
     let message: string
-    if (mouseX <) {
+    if (mouseX < ) {
 
     }
 
