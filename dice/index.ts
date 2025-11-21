@@ -14,33 +14,42 @@ function setup() {
   if (dice === 1) {
     // One point in the middle of the dice
     circle(width / 2, height / 2, dicePointDiameter);
-  } else if (dice === 2) {
+  }
+  
+  else if (dice === 2) {
     // One point in the left upper corner, one
     // in the lower right corner
     circle(width / 4, height / 4, dicePointDiameter);
     circle(3 * width / 4, 3 * height / 4, dicePointDiameter);
-  } else if (dice === 3) {
+  }
+  
+  else if (dice === 3) {
     circle(width / 4, height / 4, dicePointDiameter);
     circle(width / 2, height / 2, dicePointDiameter);
     circle(3 * width / 4, 3 * height / 4, dicePointDiameter);
-  } else if (dice === 4) {
+  }
+  
+  else if (dice === 4) {
     circle(width / 4, height / 4, dicePointDiameter);
     circle(3 * width / 4, height / 4, dicePointDiameter);
     circle(width / 4, 3 * height / 4, dicePointDiameter);
     circle(width / 4 * 3, height / 4 * 3, dicePointDiameter);
-  } else if (dice === 5) {
+  }
+  
+  else if (dice === 5) {
     circle(width / 4, height / 4, dicePointDiameter);
     circle(3 * width / 4, height / 4, dicePointDiameter);
     circle(width / 4, 3 * height / 4, dicePointDiameter);
     circle(width / 4 * 3, height / 4 * 3, dicePointDiameter);
     circle(width / 2, height / 2, dicePointDiameter);
-  } else if (dice === 6) {
+  }
+  
+  else if (dice === 6) {
     circle(width / 4, height / 4, dicePointDiameter);
     circle(3 * width / 4, height / 4, dicePointDiameter);
     circle(width / 4, 3 * height / 4, dicePointDiameter);
     circle(width / 4 * 3, height / 4 * 3, dicePointDiameter);
     circle(width/4, height/4*2, dicePointDiameter);
     circle(width/4*3, height/4*2, dicePointDiameter);
-
   }
 }
