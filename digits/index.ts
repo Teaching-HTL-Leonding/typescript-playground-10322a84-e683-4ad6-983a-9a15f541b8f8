@@ -26,12 +26,12 @@ function setup() {
 
   textSize(30)
   fill("yellow")
-  text(number6 % 10, 45, 100)
-  text(number5 % 10, 105, 100)
-  text(number4 % 10, 165, 100)
-  text(number3 % 10, 225, 100)
-  text(number2 % 10, 285, 100)
-  text(number1 % 10, 345, 100)
+  text(number6, 45, 100)
+  text(number5, 105, 100)
+  text(number4, 165, 100)
+  text(number3, 225, 100)
+  text(number2, 285, 100)
+  text(number1, 345, 100)
 
 
   text(num, width / 2, height / 2);
