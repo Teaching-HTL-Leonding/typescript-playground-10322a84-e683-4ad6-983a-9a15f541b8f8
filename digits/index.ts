@@ -1,6 +1,6 @@
 function setup() {
   const num = Math.floor(random(0, 1_000_000));
-  
+
   const number1 = num % 10
   const number2 = floor(num / 10) % 10
   const number3 = floor(num / 100) % 10
