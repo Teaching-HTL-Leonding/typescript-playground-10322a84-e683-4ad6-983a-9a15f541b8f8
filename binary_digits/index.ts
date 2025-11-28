@@ -2,11 +2,11 @@ function setup() {
   const num = Math.floor(random(0, 64));
 
   const number1 = num % 2
-  const number2 = floor(num / 10) % 2
-  const number3 = floor(num / 100) % 2
-  const number4 = floor(num / 1000) % 2
-  const number5 = floor(num / 10000) % 2
-  const number6 = floor(num / 100000) % 2
+  const number2 = floor(num / 2) % 2
+  const number3 = floor(num / 4) % 2
+  const number4 = floor(num / 8) % 2
+  const number5 = floor(num / 16) % 2
+  const number6 = floor(num / 32) % 2
 
   textAlign(CENTER, CENTER);
   fill("yellow");
