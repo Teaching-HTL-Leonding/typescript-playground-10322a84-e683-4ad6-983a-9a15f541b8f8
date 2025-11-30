@@ -7,13 +7,13 @@ const circleDiameter2 = 50;
 
 let circleCenterX = 150;
 let circleCenterY = 0;
-let directionX = 2;
-let directionY = 2;
+let directionX = 1;
+let directionY = 1;
 
 let circleCenterX2 = 150;
-let circleCenterY2 = 300;
-let directionX2 = 2;
-let directionY2 = 2;
+let circleCenterY2 = 299;
+let directionX2 = 1;
+let directionY2 = 1;
 
 function draw() {
   background("gold");
@@ -35,7 +35,7 @@ function draw() {
   }
 
 
-
+  //--------------------------------------------------------------------------------------------
 
 
   stroke("white");
