@@ -36,7 +36,7 @@ function setup() {
   else {
     digit1 = `${number1}`
   }
-
+//------------------------------------------------------------------------------------------
   if (number2 === 10) {
     digit2 = "A"
   }
@@ -64,9 +64,9 @@ function setup() {
   else {
     digit2 = `${number2}`
   }
-
+//----------------------------------------------------------------------------------------------
   if (number3 === 10) {
-    digit2 = "A"
+    digit3 = "A"
   }
 
   else if (number3 === 11) {
@@ -90,7 +90,7 @@ function setup() {
   }
   
   else {
-    digit2 = `${number2}`
+    digit3 = `${number3}`
   }
 
 
@@ -115,6 +115,4 @@ function setup() {
 
 
   text(num, width / 2, height / 2);
-
-
 }
