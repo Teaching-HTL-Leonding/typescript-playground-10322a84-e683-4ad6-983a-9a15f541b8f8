@@ -51,5 +51,3 @@ function draw() {
     textAlign(CENTER, CENTER);
     text(countdown, diamondCenterX, diamondCenterY + 50)
 }
-
-
