@@ -34,6 +34,7 @@ function draw() {
     if (diamondCenterY >= height || diamondCenterY <= 0) {
         directionY *= -1;
         countdown += -1
+
     }
 
     if (countdown === 0) {
@@ -48,7 +49,6 @@ function draw() {
     textSize(30);
     textStyle(BOLD);
     textAlign(CENTER, CENTER);
-
     text(countdown, diamondCenterX, diamondCenterY + 50)
 }
 
