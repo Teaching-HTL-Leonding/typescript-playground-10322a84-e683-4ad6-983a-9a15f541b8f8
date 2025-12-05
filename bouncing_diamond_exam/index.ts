@@ -2,8 +2,8 @@ function setup() {
     createCanvas(300, 300);
 }
 
-let directionX = 2
-let directionY = 2
+let directionX = 3
+let directionY = 3
 
 let diamondCenterX = 150
 let diamondCenterY = 0
