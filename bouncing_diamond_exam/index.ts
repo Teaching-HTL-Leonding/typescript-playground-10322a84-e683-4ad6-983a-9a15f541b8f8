@@ -1,6 +1,5 @@
 function setup() {
     createCanvas(300, 300);
-    rectMode(CENTER);
 }
 
 let directionX = 1
@@ -22,8 +21,16 @@ function draw() {
     line(diamondCenterX - 75, diamondCenterY + 75, diamondCenterX, diamondCenterY + 150)
     line(diamondCenterX, diamondCenterY + 150, diamondCenterX + 75, diamondCenterY + 75)
 
-    
+    diamondCenterX += directionX;
+    diamondCenterY += directionY;
 
+    if (diamondCenterX >= width || diamondCenterX <= 0) {
+        directionX *= -1;
+    }
+
+    if (diamondCenterY >= height || diamondCenterY <= 0) {
+        directionY *= -1;
+    }
 
 
 }
