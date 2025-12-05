@@ -38,8 +38,8 @@ function draw() {
     }
 
     if (countdown === 0) {
-        directionX *= 0
-        directionY *= 0
+        directionX = 0
+        directionY = 0
     }
 
 
