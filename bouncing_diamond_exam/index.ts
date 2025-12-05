@@ -6,21 +6,16 @@ function setup() {
 let directionX = 1
 let directionY = 1
 
-const rectHeight = 50
-const rectWidth = 50
-let rectCenterX = 0
-let rectCenterY = 0
-
 function draw() {
     background("gold");
     stroke("white")
     strokeWeight(3)
     noFill()
 
-    rect(rectCenterX, rectCenterY, rectWidth, rectHeight)
-
-
-    if ()
+    line(width/2, height/height, width/4 * 3, height/4)
+    line(width/2, height/height, width/4, height/4)
+    line(width/4, height/4, width/2, height/2)
+    line(width/2, height/2, width/4 * 3, height/4)
 
 
 }
