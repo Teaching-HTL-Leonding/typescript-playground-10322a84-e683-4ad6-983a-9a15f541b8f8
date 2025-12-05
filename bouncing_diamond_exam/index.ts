@@ -22,6 +22,8 @@ function draw() {
     line(diamondCenterX - 75, diamondCenterY + 75, diamondCenterX, diamondCenterY + 150)
     line(diamondCenterX, diamondCenterY + 150, diamondCenterX + 75, diamondCenterY + 75)
 
+    
+
 
 
 }
