@@ -7,6 +7,7 @@ function setup() {
   background("black");
 }
 
+
 function mouseMoved() {
   background("black");
   stroke("lime")
@@ -15,28 +16,28 @@ function mouseMoved() {
   let a = 25
   while (a < 400) {
     line(a, MARGIN, mouseX, mouseY)
-    a += 25
+    a += MARGIN
   }
 
   stroke("yellow")
   let b = 25
   while (b < 400) {
-    line(375, b, mouseX, mouseY)
-    b += 25
+    line(SIZE - MARGIN, b, mouseX, mouseY)
+    b += MARGIN
   }
 
   stroke("lime")
   let c = 25
   while (c < 400) {
-    line(c, 375, mouseX, mouseY)
-    c += 25
+    line(c, SIZE - MARGIN, mouseX, mouseY)
+    c += MARGIN
   }
 
   stroke("yellow")
   let d = 25
   while (d < 400) {
-    line(25, d, mouseX, mouseY)
-    d += 25
+    line(MARGIN, d, mouseX, mouseY)
+    d += MARGIN
   }
 
 }
