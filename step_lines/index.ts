@@ -44,4 +44,20 @@ function setup() {
         line(SIZE - GRID, i, GRID * (i / GRID), i)
         i += GRID
     }
+
+
+
+
+
+    //Yellow mit For-Schleife
+    stroke("yellow")
+    for(i = GRID; i < SIZE; i += GRID) {
+        line(GRID, i, GRID * (i / GRID), i)
+    }
+
+    //Red mit For-Schleife
+    stroke("red")
+    for(i = GRID; i < SIZE; i += GRID) {
+        line(SIZE - GRID, i, GRID * (i / GRID), i)
+    }
 }
