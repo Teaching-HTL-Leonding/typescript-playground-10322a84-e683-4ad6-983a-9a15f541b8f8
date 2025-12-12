@@ -30,4 +30,10 @@ function mouseMoved() {
     c += 25
   }
 
+  let d = 25
+  while (d < 400) {
+    line(25, d, mouseX, mouseY)
+    d += 25
+  }
+
 }
