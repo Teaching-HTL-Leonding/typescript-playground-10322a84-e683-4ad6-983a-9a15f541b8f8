@@ -32,11 +32,6 @@ function setup() {
         i += GRID
     }
 
-    // line(GRID, GRID              , GRID              , GRID              );
-    // line(GRID, GRID + GRID       , GRID + GRID       , GRID + GRID       );
-    // line(GRID, GRID + GRID + GRID, GRID + GRID + GRID, GRID + GRID + GRID);
-
-
     // Draw right part of the lines
     stroke("red");
     i = GRID;
