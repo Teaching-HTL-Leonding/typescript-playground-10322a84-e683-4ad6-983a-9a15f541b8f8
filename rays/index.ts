@@ -18,18 +18,21 @@ function mouseMoved() {
     a += 25
   }
 
+  stroke("yellow")
   let b = 25
   while (b < 400) {
     line(375, b, mouseX, mouseY)
     b += 25
   }
 
+  stroke("lime")
   let c = 25
   while (c < 400) {
     line(c, 375, mouseX, mouseY)
     c += 25
   }
 
+  stroke("yellow")
   let d = 25
   while (d < 400) {
     line(25, d, mouseX, mouseY)
