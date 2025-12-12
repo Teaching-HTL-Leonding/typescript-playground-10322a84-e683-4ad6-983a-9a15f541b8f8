@@ -13,29 +13,29 @@ function mouseMoved() {
   stroke("lime")
   strokeWeight(2);
 
-  let a = 25
-  while (a < 400) {
+  let a = MARGIN
+  while (a < SIZE) {
     line(a, MARGIN, mouseX, mouseY)
     a += MARGIN
   }
 
   stroke("yellow")
-  let b = 25
-  while (b < 400) {
+  let b = MARGIN
+  while (b < SIZE) {
     line(SIZE - MARGIN, b, mouseX, mouseY)
     b += MARGIN
   }
 
   stroke("lime")
-  let c = 25
-  while (c < 400) {
+  let c = MARGIN
+  while (c < SIZE) {
     line(c, SIZE - MARGIN, mouseX, mouseY)
     c += MARGIN
   }
 
   stroke("yellow")
-  let d = 25
-  while (d < 400) {
+  let d = MARGIN
+  while (d < SIZE) {
     line(MARGIN, d, mouseX, mouseY)
     d += MARGIN
   }
