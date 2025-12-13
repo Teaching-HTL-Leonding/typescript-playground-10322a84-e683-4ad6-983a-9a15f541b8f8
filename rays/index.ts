@@ -39,5 +39,4 @@ function mouseMoved() {
     line(MARGIN, d, mouseX, mouseY)
     d += MARGIN
   }
-
 }
