@@ -1,23 +1,26 @@
 function setup() {
-    createCanvas(400, 400)
-    background("hotpink")
+    createCanvas(500, 500)
+    background("magenta")
+    textAlign(CENTER, CENTER)
+
+
+
+    for (let y = 0; y < 5; y++) {
+        for (let x = 0; x < 5; x++) {
+            fill("darkred")
+            noStroke()
+            circle(50, 50, 100)
+
+            fill("white")
+            text(`x=${x}, y=${y}`, 50, 50)
+            translate(100, 0)
+        }
+
+        translate(-500, 100)
+    }
+
+
+
+
+
 }
-
-let x: number = 0
-let direction: number = 3
-
-function draw() {
-    background("hotpink")
-    fill("darkblue")
-    circle(x, 200, 50)
-    x+= direction
-
-    // === gleich
-    // !== nicht gleich
-    // >, >=, <, <= Vergleiche
-    if (x >= width) { direction = -3 }
-    if (x === 0) {direction = 3 }
-}
-
-//Bedingungen
-//if-Statements
