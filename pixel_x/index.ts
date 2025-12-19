@@ -4,23 +4,17 @@ function setup() {
 
     createCanvas(SIZE, SIZE);
     background("black");
+
     noStroke();
 
+    let i = GRID;
+    while (i < SIZE - GRID) {
+        fill("yellow");
+        rect(i, i, GRID, GRID);
 
-    let a = 15
-    for (a = 15; a <= SIZE; a += GRID) {
-        fill("yellow")
-        rectMode(CENTER)
-        rect(a, a, GRID, GRID)
+        fill("lime");
+        rect(i, height- GRID - i, GRID, GRID);
+        
+        i += GRID;
     }
-
-    let b = 15
-    for (b = 15; b <= SIZE; b += GRID) {
-        fill("lime")
-        rectMode(CENTER)
-        rect(b, SIZE - b, GRID, GRID)
-    }
-
-
-
 }
