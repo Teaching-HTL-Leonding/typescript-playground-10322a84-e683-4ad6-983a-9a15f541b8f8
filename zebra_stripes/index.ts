@@ -7,8 +7,8 @@ function setup() {
 
     noStroke();
 
-    let a = 0
-    for(a = 0; a < SIZE; a += 100) {
+
+    for(let a = 0; a < SIZE; a += 100) {
         fill("lime")
         rect(0, a, SIZE, STRIPE_THICKNESS)
     }
