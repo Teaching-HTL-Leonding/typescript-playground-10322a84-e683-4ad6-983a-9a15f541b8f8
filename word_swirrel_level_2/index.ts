@@ -26,7 +26,7 @@ function setup() {
   textSize(75)
   for (let i = 0; i < scrambledWord.length; i++) {
     fill(random(360), 100, 100)
-    
+
     push()
     translate(random(20, 480), random(20, 280))
     rotate(random(-30, 30))
