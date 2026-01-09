@@ -21,11 +21,16 @@ function setup() {
       + wordToScramble.substring(letterIndex + 1)
   }
 
+  push()
+  translate(random(20, 480), random(20, 280))
+  pop()
+  rotate(-30, 30)
+
   textAlign(CENTER, CENTER)
   fill(random(360), 100, 100)
   textSize(75)
   for (let i = 0; i < scrambledWord.length; i++) {
-    text(scrambledWord[1], random(20, 470), random(20, 270))
+    text(scrambledWord[1], random(20, 480), random(20, 280))
   }
 }
 
