@@ -22,7 +22,7 @@ function setup() {
   }
 
   textAlign(CENTER, CENTER)
-  fill("white")
+  fill(random(360), 100, 100)
   textSize(75)
   for (let i = 0; i < scrambledWord.length; i++) {
     text(scrambledWord[1], random(20, 470), random(20, 270))
