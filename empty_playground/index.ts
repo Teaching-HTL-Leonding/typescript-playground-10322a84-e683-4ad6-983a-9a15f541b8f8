@@ -36,8 +36,8 @@ function draw() {
 
     //Ball bewegen
     ballX += speed
-    if (ballX > width) {
-        ballX = 0
+    if (ballX > width + 25) {
+        ballX = -25
     }
 
     //Linien anzeigen
@@ -75,7 +75,7 @@ function mouseClicked() {
         }
     }
 
-    
+
         if (mouseX > buttonX2 && mouseX < buttonX2 + buttonsize
             && mouseY > buttonY2 && mouseY < buttonY2 + buttonsize) {
 
@@ -84,5 +84,4 @@ function mouseClicked() {
                 currentRow = rows.length - 1
             }
         }
-
 }
