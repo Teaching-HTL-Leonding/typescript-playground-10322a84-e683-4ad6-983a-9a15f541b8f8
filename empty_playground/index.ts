@@ -1,24 +1,63 @@
+let ballX = 0
+let speed = 2
+
+//Zeilen Y Achse
+let rows = [360, 320, 280, 240, 200, 160, 120, 80, 40]
+let currentRow = 0
+
+//Button
+let buttonsize = 50
+let buttonX
+let buttonY
+
+
 function setup() {
-    const centerX: number[] = [100, 150, 200, 250, 300]
-    const centerY: number[] = [100, 150, 200, 250, 300]
-    const diameter: number[] = [20, 40, 60, 80, 100]
-
-    console.log("vor push", diameter)
-    centerX.push(400)
-    centerY.push(400)
-    diameter.push(120)
-    console.log("nach push", diameter)
-
-    centerX.splice(0, 3)
-    centerY.splice(0, 3)
-    diameter.splice(0, 3)
-
-    createCanvas(500, 500)
-    background("white")
-
-    fill("red")
-    for(let i = 0; i < centerX.length; i++) {
-        circle(centerX[i], centerY[i], diameter[i])
-    }
+    createCanvas(600, 400)
+    buttonX = width - 10 - buttonsize
+    buttonY = height - 10 - buttonsize
 }
 
+function draw() {
+    background("magenta")
+
+    //Ball zeichnen
+    fill("lightblue")
+    stroke("white")
+    strokeWeight(2)
+    circle(ballX, rows[currentRow], 50)
+
+    //Ball bewegen
+    ballX += speed
+    if (ballX >= width || ballX <= 0) {
+        ballX *= -1
+    }
+
+    //Linien anzeigen
+    stroke("grey")
+    for (let i = 0; i < rows.length; i++) {
+        line(0, rows[i], width, rows[i])
+    }
+
+    //Button zeichnen
+    fill("white")
+    stroke("darkgreen")
+
+    rect(buttonX, buttonY, buttonsize, buttonsize)
+
+    line(buttonX + buttonsize/2, buttonY + 10,
+        buttonX + buttonsize/2, buttonY + buttonsize - 10)
+
+    line(buttonX + 10, buttonY + buttonsize/2,
+        buttonX + buttonsize - 10, buttonY + buttonsize/2)
+}
+
+function mouseClicked () {
+    if (mouseX > buttonX && mouseX < buttonX + buttonsize
+        && mouseY > buttonY && mouseY < buttonY + buttonsize) {
+
+            if (currentRow < rows.length - 1) {
+                currentRow ++
+            }
+
+        }
+}
