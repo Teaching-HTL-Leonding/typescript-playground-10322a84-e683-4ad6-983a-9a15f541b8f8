@@ -20,10 +20,10 @@ function setup() {
 }
 
 function draw() {
-    background("magenta")
+    background("aqua")
 
     //Ball zeichnen
-    fill("lightblue")
+    fill("white")
     stroke("white")
     strokeWeight(2)
     circle(ballX, rows[currentRow], 50)
@@ -58,7 +58,6 @@ function mouseClicked () {
         && mouseY > buttonY && mouseY < buttonY + buttonsize) {
 
             currentRow ++
-            
             if (currentRow > rows.length - 1) {
                 currentRow = 0
             }
