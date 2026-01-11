@@ -5,6 +5,8 @@ let speed = 2
 let rows = [360, 320, 280, 240, 200, 160, 120, 80, 40]
 let currentRow = 0
 
+
+
 //Button
 let buttonsize = 50
 let buttonX
@@ -28,8 +30,8 @@ function draw() {
 
     //Ball bewegen
     ballX += speed
-    if (ballX >= width || ballX <= 0) {
-        ballX *= -1
+    if (ballX > width) {
+        ballX = 0
     }
 
     //Linien anzeigen
@@ -55,9 +57,12 @@ function mouseClicked () {
     if (mouseX > buttonX && mouseX < buttonX + buttonsize
         && mouseY > buttonY && mouseY < buttonY + buttonsize) {
 
-            if (currentRow < rows.length - 1) {
-                currentRow ++
+            currentRow ++
+            
+            if (currentRow > rows.length - 1) {
+                currentRow = 0
             }
+
 
         }
 }
