@@ -68,6 +68,7 @@ function draw() {
 function mouseClicked() {
     if (mouseX > buttonX && mouseX < buttonX + buttonsize
         && mouseY > buttonY && mouseY < buttonY + buttonsize) {
+            
         currentRow++
         if (currentRow > rows.length - 1) {
             currentRow = 0
@@ -75,12 +76,12 @@ function mouseClicked() {
     }
 
 
-        if (mouseX > buttonX2 && mouseX < buttonX2 + buttonsize
-            && mouseY > buttonY2 && mouseY < buttonY2 + buttonsize) {
+    if (mouseX > buttonX2 && mouseX < buttonX2 + buttonsize
+        && mouseY > buttonY2 && mouseY < buttonY2 + buttonsize) {
 
-            currentRow--
-            if (currentRow < 0) {
-                currentRow = rows.length - 1
-            }
+        currentRow--
+        if (currentRow < 0) {
+            currentRow = rows.length - 1
         }
+    }
 }
