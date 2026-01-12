@@ -63,7 +63,6 @@ function draw() {
 
     line(buttonX2 + 10, buttonY2 + buttonsize / 2,
         buttonX2 + buttonsize - 10, buttonY2 + buttonsize / 2)
-
 }
 
 function mouseClicked() {
