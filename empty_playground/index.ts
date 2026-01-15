@@ -1,5 +1,5 @@
 let ballX = 0
-let speed = 10
+let speed = 5
 
 //Zeilen Y Achse
 let rows = [360, 320, 280, 240, 200, 160, 120, 80, 40]
