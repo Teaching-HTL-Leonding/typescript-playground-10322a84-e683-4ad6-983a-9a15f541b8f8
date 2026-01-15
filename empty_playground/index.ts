@@ -5,8 +5,6 @@ let speed = 2
 let rows = [360, 320, 280, 240, 200, 160, 120, 80, 40]
 let currentRow = 0
 
-
-
 //Button
 let buttonsize = 50
 let buttonX
