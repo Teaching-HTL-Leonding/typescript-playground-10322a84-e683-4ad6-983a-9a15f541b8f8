@@ -12,9 +12,6 @@ let buttonsize = 50
 let buttonX
 let buttonY
 
-let buttonX2
-let buttonY2
-
 
 function setup() {
     createCanvas(600, 400)
@@ -57,12 +54,6 @@ function draw() {
 
     line(buttonX + 10, buttonY + buttonsize / 2,
         buttonX + buttonsize - 10, buttonY + buttonsize / 2)
-
-    //Minus Button
-    rect(buttonX2, buttonY2, buttonsize, buttonsize)
-
-    line(buttonX2 + 10, buttonY2 + buttonsize / 2,
-        buttonX2 + buttonsize - 10, buttonY2 + buttonsize / 2)
 }
 
 function mouseClicked() {
@@ -72,16 +63,6 @@ function mouseClicked() {
         currentRow++
         if (currentRow > rows.length - 1) {
             currentRow = 0
-        }
-    }
-
-
-    if (mouseX > buttonX2 && mouseX < buttonX2 + buttonsize
-        && mouseY > buttonY2 && mouseY < buttonY2 + buttonsize) {
-
-        currentRow--
-        if (currentRow < 0) {
-            currentRow = rows.length - 1
         }
     }
 }
