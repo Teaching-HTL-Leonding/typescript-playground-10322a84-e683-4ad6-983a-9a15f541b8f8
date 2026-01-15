@@ -1,5 +1,5 @@
 let ballX = 0
-let speed = 2
+let speed = 10
 
 //Zeilen Y Achse
 let rows = [360, 320, 280, 240, 200, 160, 120, 80, 40]
@@ -28,8 +28,8 @@ function draw() {
 
     //Ball bewegen
     ballX += speed
-    if (ballX >= width)  {
-        ballX *= -1
+    if (ballX >= width || ballX <= 0)  {
+        speed *= -1
     }
 
     //Linien anzeigen
