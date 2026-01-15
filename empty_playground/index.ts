@@ -17,9 +17,6 @@ function setup() {
     createCanvas(600, 400)
     buttonX = width - 10 - buttonsize
     buttonY = height - 10 - buttonsize
-
-    buttonX2 = buttonX - 10 - buttonsize
-    buttonY2 = buttonY
 }
 
 function draw() {
@@ -33,8 +30,8 @@ function draw() {
 
     //Ball bewegen
     ballX += speed
-    if (ballX > width + 25) {
-        ballX = -25
+    if (ballX >= width)  {
+        ballX *= -1
     }
 
     //Linien anzeigen
