@@ -39,7 +39,7 @@ function draw() {
 
 
     //Ball zeichnen
-    for(let i = 0; i < ball.length; i++) {
+    for (let i = 0; i < ball.length; i++) {
         circle(ball[i], rows[i % rows.length], DIAM)
 
         ball[i] += speed[i]
@@ -48,13 +48,17 @@ function draw() {
         }
     }
 
-    
+
 }
 
 function mouseClicked() {
-    if(mouseX > 0 && mouseX < width && mouseY > 0 && mouseY < height) {
+    if (mouseX > 0 && mouseX < width && mouseY > 0 && mouseY < height) {
         ball.push(random(0, 360))
         speed.push(2)
     }
-    
+}
+
+function mouseMoved() {
+    if (mouseY > 0) {
+    }
 }
