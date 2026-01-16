@@ -37,14 +37,14 @@ function draw() {
 
     //Ball zeichnen
     for(let i = 0; i < ball.length; i++) {
-        circle(ball[i], rows[i % rows.length], 50)
+        circle(ball[i], rows[i % rows.length], 10)
 
         ball[i] += speed [i]
         if (ball [i] <= 0 || ball [i] >= width) {
             ball[i] *= -1
         }
     }
-    
+
 }
 
 function mouseClicked() {
