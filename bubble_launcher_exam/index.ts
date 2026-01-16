@@ -46,8 +46,6 @@ function draw() {
         if (ball[i] <= 0 || ball[i] >= width) {
             speed[i] *= -1
         }
-
-
     }
 
 
@@ -58,7 +56,6 @@ function mouseClicked() {
     if(mouseX > 0 && mouseX < width && mouseY > 0 && mouseY < height) {
         ball.push(random(0, 360))
         speed.push(2)
-
     }
     
 }
