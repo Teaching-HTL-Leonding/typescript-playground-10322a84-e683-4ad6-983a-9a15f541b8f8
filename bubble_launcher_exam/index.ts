@@ -4,7 +4,7 @@ let direction: number = 1;
 
 //Ball
 let ball = [0]
-let speed = [5]
+let speed = [2]
 
 //Zeilen Y Achse
 let rows = [360, 320, 280, 240, 220, 180, 140, 100, 60, 20]
@@ -35,15 +35,19 @@ function draw() {
         circleX = max(RADI, min(width - RADI, circleX));
     }
 
+
+
     //Ball zeichnen
     for(let i = 0; i < ball.length; i++) {
-        circle(ball[i], rows[i % rows.length], 10)
+        circle(ball[i], rows[i % rows.length], DIAM)
 
-        ball[i] += speed [i]
-        if (ball [i] <= 0 || ball [i] >= width) {
-            ball[i] *= -1
+        ball[i] += speed[i]
+        if (ball[i] <= 0 || ball[i] >= width) {
+            speed[i] *= -1
         }
     }
+
+
 
 }
 
