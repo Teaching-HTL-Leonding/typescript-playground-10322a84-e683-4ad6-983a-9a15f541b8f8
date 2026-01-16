@@ -3,8 +3,8 @@ let circleY: number = 150;
 let direction: number = 1;
 
 //Ball
-let ball = [0]
 let speed = [2]
+let ball = [0]
 
 //Zeilen Y Achse
 let rows = [360, 320, 280, 240, 220, 180, 140, 100, 60, 20]
@@ -15,6 +15,7 @@ const DIAM: number = RADI * 2;
 
 function setup() {
     createCanvas(400, 300);
+    let ball: number = (random(20, 360))
 }
 
 function draw() {
@@ -45,6 +46,8 @@ function draw() {
         if (ball[i] <= 0 || ball[i] >= width) {
             speed[i] *= -1
         }
+
+
     }
 
 
@@ -53,8 +56,7 @@ function draw() {
 
 function mouseClicked() {
     if(mouseX > 0 && mouseX < width && mouseY > 0 && mouseY < height) {
-        random(0, 400)
-        ball.push(0)
+        ball.push(random(0, 360))
         speed.push(2)
 
     }
