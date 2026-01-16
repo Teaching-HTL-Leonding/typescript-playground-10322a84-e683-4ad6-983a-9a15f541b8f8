@@ -58,7 +58,3 @@ function mouseClicked() {
     }
 }
 
-function mouseMoved() {
-    if (mouseY > 0) {
-    }
-}
