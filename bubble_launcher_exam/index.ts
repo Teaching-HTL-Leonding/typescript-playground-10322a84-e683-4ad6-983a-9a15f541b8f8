@@ -53,8 +53,10 @@ function draw() {
 
 function mouseClicked() {
     if(mouseX > 0 && mouseX < width && mouseY > 0 && mouseY < height) {
+        random(0, 400)
         ball.push(0)
-        speed.push(5)
+        speed.push(2)
+
     }
     
 }
