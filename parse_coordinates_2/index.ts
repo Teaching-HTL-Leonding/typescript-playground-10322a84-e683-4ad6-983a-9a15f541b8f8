@@ -30,8 +30,6 @@ function setup() {
             line(100, 250, 100, 150)
             line(100, 150, 200, 100)
             coordinates = ""
-        } else {
-            coordinates += points[i]
-        }
+        } 
     }
 }
