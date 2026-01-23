@@ -22,10 +22,13 @@ function setup() {
             coordinates = ""
         } else if (points[i] === " ") {
             y = parseInt(coordinates)
-            line(x, y, x, 40)
+            line(x, y, x, y)
             coordinates = ""
         } else {
             coordinates += points[i]
         }
     }
+    y = parseInt(coordinates)
+    line(x, y, x, y)
+
 }
