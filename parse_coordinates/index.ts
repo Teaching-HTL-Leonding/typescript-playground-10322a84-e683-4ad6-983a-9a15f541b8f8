@@ -13,13 +13,11 @@ function setup() {
     let x = 0 // X-Koordinate des Mittelpunkts des aktuellen Kreises
     let y = 0 // Y-Koordinate
     let coordinates = "" //Hilfsvariable
-
     for (let i = 0; i < circles.length; i++) {
         // Was kann in circles[i] stehen?
         // 1) Komma
         // 2) Leerzeilen
         // 3)
-
         if (circles[i] === ",") {
             x = parseInt(coordinates)
             coordinates = ""
