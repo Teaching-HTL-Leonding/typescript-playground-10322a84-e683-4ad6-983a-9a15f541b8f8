@@ -25,6 +25,7 @@ function setup() {
             //Leerzeichen gefunden -> im coordinates steht y
             y2 = parseInt(coordinates)
             if (spaceCharsfound > 0) {
+                circle(x2, y2, 5)
                 line(x1, y1, x2, y2)
             }
 
@@ -42,6 +43,7 @@ function setup() {
     //Wir tun so, als wäre ein Leerzeichen ganz am Ende
     y2 = parseInt(coordinates)
     if (spaceCharsfound > 0) {
+        circle(x2, y2, 5)
         line(x1, y1, x2, y2)
     }
 }
