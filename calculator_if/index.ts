@@ -5,7 +5,7 @@ let lineHeight: number = 0;   // Height of a line of the responsive layout
 let cellWidth: number = 0;    // Width of a cell of the responsive layout
 
 function setup() {
-    createCanvas(300, 300);
+    createCanvas(300, 600);
     lineHeight = height / 5;
     cellWidth = width / 3;
 }
