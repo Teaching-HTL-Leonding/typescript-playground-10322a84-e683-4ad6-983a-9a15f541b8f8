@@ -25,6 +25,9 @@ function draw() {
     line(cellWidth * 2, lineHeight, cellWidth * 2, height)
     line(cellWidth, lineHeight, cellWidth, lineHeight * 4)
 
+    textAlign(CENTER, CENTER)
+    
+
 
 
     function mouseClicked() {
