@@ -14,12 +14,17 @@ function draw() {
     background("lightgray");
     stroke("black")
 
+    fill("white")
+    rect(MARGIN_NUM, MARGIN_NUM, width - 2 * MARGIN_NUM, lineHeight - 2 * MARGIN_NUM)
+
     for (let i = 0; i < 6; i++) {
         line(i, lineHeight * i, width, lineHeight * i)
     }
 
     line(cellWidth * 2, lineHeight, cellWidth * 2, height)
     line(cellWidth, lineHeight, cellWidth, lineHeight * 4)
+
+
 
     textAlign(CENTER, CENTER)
     textSize(50)
