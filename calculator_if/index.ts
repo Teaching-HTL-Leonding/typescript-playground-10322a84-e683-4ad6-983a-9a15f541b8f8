@@ -5,7 +5,7 @@ let lineHeight: number = 0;   // Height of a line of the responsive layout
 let cellWidth: number = 0;    // Width of a cell of the responsive layout
 
 function setup() {
-    createCanvas(300, 600);
+    createCanvas(300, 300);
     lineHeight = height / 5;
     cellWidth = width / 3;
 }
@@ -18,14 +18,15 @@ function draw() {
         line(i, lineHeight * i, width, lineHeight * i)
     }
 
-    // for (let i = 0; i < 5; i++) {
-    //     line(cellWidth * i, lineHeight, cellWidth * i, height)
-    // }
-
     line(cellWidth * 2, lineHeight, cellWidth * 2, height)
     line(cellWidth, lineHeight, cellWidth, lineHeight * 4)
 
     textAlign(CENTER, CENTER)
+    textSize(50)
+    text(`0`, cellWidth, lineHeight * 4.5)
+    text(`C`, cellWidth * 2.5, lineHeight * 4.5)
+    text(`1`, cellWidth * 0.5, lineHeight * 3.5)
+    text(`2`, cellWidth * 1.5, lineHeight * 3.5)
     
 
 
