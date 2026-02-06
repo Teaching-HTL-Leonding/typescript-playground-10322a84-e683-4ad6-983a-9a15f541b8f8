@@ -7,8 +7,6 @@ function setup() {
 
     let message: string;
     switch (dice) {
-
-    
     case 1:
         message = "Eins"
         break
