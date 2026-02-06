@@ -25,15 +25,21 @@ function draw() {
     line(cellWidth, lineHeight, cellWidth, lineHeight * 4)
 
 
-
+    fill("black")
     textAlign(CENTER, CENTER)
     textSize(50)
     text(`0`, cellWidth, lineHeight * 4.5)
     text(`C`, cellWidth * 2.5, lineHeight * 4.5)
     text(`1`, cellWidth * 0.5, lineHeight * 3.5)
     text(`2`, cellWidth * 1.5, lineHeight * 3.5)
-    text(`3`, cellWidth*2.5, lineHeight*3.5)
-    text(`4`, cellWidth*0.5, lineHeight*2.5)
+    text(`3`, cellWidth * 2.5, lineHeight * 3.5)
+    text(`4`, cellWidth * 0.5, lineHeight * 2.5)
+    text(`5`, cellWidth * 1.5, lineHeight * 2.5)
+    text(`6`, cellWidth * 2.5, lineHeight * 2.5)
+    text(`7`, cellWidth * 0.5, lineHeight * 1.5)
+    text(`8`, cellWidth * 1.5, lineHeight * 1.5)
+    text(`9`, cellWidth * 2.5, lineHeight * 1.5)
+
 
 
 
