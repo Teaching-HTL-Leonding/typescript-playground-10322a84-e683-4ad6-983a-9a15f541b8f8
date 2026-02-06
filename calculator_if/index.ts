@@ -15,8 +15,10 @@ function draw() {
     stroke("black")
 
     fill("white")
+    noStroke()
     rect(MARGIN_NUM, MARGIN_NUM, width - 2 * MARGIN_NUM, lineHeight - 2 * MARGIN_NUM)
 
+    stroke("black")
     for (let i = 0; i < 6; i++) {
         line(i, lineHeight * i, width, lineHeight * i)
     }
