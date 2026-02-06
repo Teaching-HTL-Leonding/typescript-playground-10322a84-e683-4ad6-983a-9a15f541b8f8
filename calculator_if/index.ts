@@ -48,5 +48,8 @@ function draw() {
 
 
     function mouseClicked() {
-        // <<< Add code here
+        textAlign(CENTER, CENTER)
+        if(mouseX < 0 && mouseX > width && mouseY < 0 && mouseY > height) {
+            
+        }
     }
