@@ -41,13 +41,14 @@ function draw() {
     text(`7`, cellWidth * 0.5, lineHeight * 1.5)
     text(`8`, cellWidth * 1.5, lineHeight * 1.5)
     text(`9`, cellWidth * 2.5, lineHeight * 1.5)
-
+}
 
 
 
 
 
     function mouseClicked() {
+        let message: string
         textAlign(CENTER, CENTER)
         if(mouseX < 0 && mouseX > width && mouseY < 0 && mouseY > height) {
             
