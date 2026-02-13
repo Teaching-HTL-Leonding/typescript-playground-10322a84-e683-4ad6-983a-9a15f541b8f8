@@ -1,6 +1,6 @@
 const MARGIN_NUM = 10;
 
-let num: number = 0;          // Current number entered by the user
+let num: string = "";          // Current number entered by the user
 let lineHeight: number = 0;   // Height of a line of the responsive layout
 let cellWidth: number = 0;    // Width of a cell of the responsive layout
 
@@ -27,6 +27,11 @@ function draw() {
     line(cellWidth, lineHeight, cellWidth, lineHeight * 4)
 
 
+
+
+
+
+
     fill("black")
     textAlign(CENTER, CENTER)
     textSize(50)
@@ -41,16 +46,35 @@ function draw() {
     text(`7`, cellWidth * 0.5, lineHeight * 1.5)
     text(`8`, cellWidth * 1.5, lineHeight * 1.5)
     text(`9`, cellWidth * 2.5, lineHeight * 1.5)
+
+
+    //Zahleingabe
+    fill("black")
+    textSize(50)
+    textAlign(RIGHT,CENTER)
+    text(num, width - 20, lineHeight/2)
+
 }
 
 
 
 
 
-    function mouseClicked() {
-        let message: string
-        textAlign(CENTER, CENTER)
-        if(mouseX < 0 && mouseX > width && mouseY < 0 && mouseY > height) {
-            
+
+
+function mouseClicked() {
+
+
+    const x = floor(mouseX / cellWidth)
+    const y = floor(mouseY / lineHeight)
+
+    if (y === 1) {
+
+        if (x === 0) {
+
+            num += 7
         }
     }
+
+
+}
