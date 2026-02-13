@@ -113,5 +113,8 @@ function mouseClicked() {
             num += 0
         }
 
-
+        else if (x === 2) {
+            num = ""
+        }
+    }
 }
