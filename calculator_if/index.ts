@@ -59,60 +59,118 @@ function draw() {
 
 
 
-
 function mouseClicked() {
     const x = floor(mouseX / cellWidth)
     const y = floor(mouseY / lineHeight)
 
-    if (y === 1) {
-        if (x === 0) {
-            num += 7
-        }
+    switch (y) {
+        case 1:
+            switch (x) {
+                case 0:
+                    num += 7;
+                    break;
+                case 1:
+                    num += 8;
+                    break;
+                case 2:
+                    num += 9;
+                    break;
+            }
+            break;
 
-        else if (x === 1) {
-            num += 8
-        }
+        case 2:
+            switch (x) {
+                case 0:
+                    num += 4;
+                    break;
+                case 1:
+                    num += 5;
+                    break;
+                case 2:
+                    num += 6;
+                    break;
+            }
+            break;
 
-        else if (x === 2) {
-            num += 9
-        }
-    }
+        case 3:
+            switch (x) {
+                case 0:
+                    num += 1;
+                    break;
+                case 1:
+                    num += 2;
+                    break;
+                case 2:
+                    num += 3;
+                    break;
+            }
+            break;
 
-    if (y === 2) {
-        if (x === 0) {
-            num += 4
-        }
-
-        else if (x === 1) {
-            num += 5
-        }
-
-        else if (x === 2) {
-            num += 6
-        }
-    }
-
-    if (y === 3) {
-        if (x === 0) {
-            num += 1
-        }
-
-        else if (x === 1) {
-            num += 2
-        }
-
-        else if (x === 2) {
-            num += 3
-        }
-    }
-
-    if (y === 4) {
-        if (x === 0 || x === 1) {
-            num += 0
-        }
-
-        else if (x === 2) {
-            num = ""
-        }
+        case 4:
+            switch (x) {
+                case 0:
+                case 1:
+                    num += 0;
+                    break;
+                case 2:
+                    num = "";
+                    break;
+            }
+            break;
     }
 }
+
+
+//Davor mit if-Statement
+
+    // if (y === 1) {
+    //     if (x === 0) {
+    //         num += 7
+    //     }
+
+    //     else if (x === 1) {
+    //         num += 8
+    //     }
+
+    //     else if (x === 2) {
+    //         num += 9
+    //     }
+    // }
+
+    // if (y === 2) {
+    //     if (x === 0) {
+    //         num += 4
+    //     }
+
+    //     else if (x === 1) {
+    //         num += 5
+    //     }
+
+    //     else if (x === 2) {
+    //         num += 6
+    //     }
+    // }
+
+    // if (y === 3) {
+    //     if (x === 0) {
+    //         num += 1
+    //     }
+
+    //     else if (x === 1) {
+    //         num += 2
+    //     }
+
+    //     else if (x === 2) {
+    //         num += 3
+    //     }
+    // }
+
+    // if (y === 4) {
+    //     if (x === 0 || x === 1) {
+    //         num += 0
+    //     }
+
+    //     else if (x === 2) {
+    //         num = ""
+    //     }
+    // }
