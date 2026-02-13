@@ -60,8 +60,6 @@ function draw() {
 
 
 
-
-
 function mouseClicked() {
     const x = floor(mouseX / cellWidth)
     const y = floor(mouseY / lineHeight)
