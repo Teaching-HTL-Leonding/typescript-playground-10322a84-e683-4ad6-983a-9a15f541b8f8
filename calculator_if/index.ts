@@ -51,8 +51,8 @@ function draw() {
     //Zahleingabe
     fill("black")
     textSize(50)
-    textAlign(RIGHT,CENTER)
-    text(num, width - 20, lineHeight/2)
+    textAlign(RIGHT, CENTER)
+    text(num, width - 20, lineHeight / 2)
 
 }
 
@@ -63,18 +63,55 @@ function draw() {
 
 
 function mouseClicked() {
-
-
     const x = floor(mouseX / cellWidth)
     const y = floor(mouseY / lineHeight)
 
     if (y === 1) {
-
         if (x === 0) {
-
             num += 7
         }
+
+        else if (x === 1) {
+            num += 8
+        }
+
+        else if (x === 2) {
+            num += 9
+        }
     }
+
+    if (y === 2) {
+        if (x === 0) {
+            num += 4
+        }
+
+        else if (x === 1) {
+            num += 5
+        }
+
+        else if (x === 2) {
+            num += 6
+        }
+    }
+
+    if (y === 3) {
+        if (x === 0) {
+            num += 1
+        }
+
+        else if (x === 1) {
+            num += 2
+        }
+
+        else if (x === 2) {
+            num += 3
+        }
+    }
+
+    if (y === 4) {
+        if (x === 0 || x === 1) {
+            num += 0
+        }
 
 
 }
