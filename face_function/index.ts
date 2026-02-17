@@ -15,6 +15,23 @@ function setup() {
 //       |     |      +------------- Parameter type
 //       v     v      v
 function smile(happy: boolean) {
-  fill("yellow")
-  circle(random(0, 500), random(0, 500), 50)
+
+
+  const x = random(width);
+  const y = random(height);
+
+  // Kopf
+  fill("yellow");
+  circle(x, y, 80);
+
+  // Augen
+  fill("black");
+  circle(x - 15, y - 10, 8);
+  circle(x + 15, y - 10, 8);
+
+  // Mund (erst mal nur happy)
+  noFill()
+  stroke("black")
+  strokeWeight(2)
+  arc(x, y + 10, 40, 30, 0, 180);
 }
