@@ -4,18 +4,11 @@ function setup() {
   createCanvas(500, 500);
   angleMode(DEGREES);
 
-  // Function CALL
-  // +------------------------------ Function name
-  // |  +--------------------------- Function parameter
-  // v  v
+  //erstes Gesicht: immer happy
   smile(true);
 }
 
-// Function DEFINITION
-//       +-------------------------- Function name
-//       |     +-------------------- Parameter name
-//       |     |      +------------- Parameter type
-//       v     v      v
+
 function smile(happy: boolean) {
   const x = random(width);
   const y = random(height);
