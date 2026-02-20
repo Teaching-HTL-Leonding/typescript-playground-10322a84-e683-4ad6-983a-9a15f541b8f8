@@ -35,3 +35,8 @@ function smile(happy: boolean) {
   strokeWeight(2)
   arc(x, y + 10, 40, 30, 0, 180);
 }
+
+function mouseClicked() {
+  // Step 2: bei jedem Klick ein neues Gesicht
+  smile(true);
+}
