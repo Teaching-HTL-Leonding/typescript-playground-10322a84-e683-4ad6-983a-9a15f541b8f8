@@ -15,8 +15,6 @@ function setup() {
 //       |     |      +------------- Parameter type
 //       v     v      v
 function smile(happy: boolean) {
-
-
   const x = random(width);
   const y = random(height);
 
