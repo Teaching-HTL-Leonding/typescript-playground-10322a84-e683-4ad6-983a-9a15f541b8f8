@@ -26,7 +26,7 @@ function smile(happy: boolean) {
   circle(x - 15, y - 10, 8);
   circle(x + 15, y - 10, 8);
 
-  // Mund (erst mal nur happy)
+  // Mund
   noFill()
   stroke("black")
   strokeWeight(2)
