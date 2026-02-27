@@ -16,7 +16,7 @@ function smile(happy: boolean) {
   if (happy) {
     fill("yellow") //lachend
   } else {
-    fill("lime") //trazrig
+    fill("lime") //traurig
   }
   circle(x, y, 80)
 
