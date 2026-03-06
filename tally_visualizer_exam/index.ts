@@ -50,16 +50,14 @@ function setup() {
 
     //Striche
     translate(50, 80)
-    for (let row = 0; row < 1; row++) {
-
-        for (let col = 0; col < 1; col++) {
+    for (let row = 0; row < 10; row++) {
+        for (let col = 0; col < 10; col++) {
 
             let filled = shouldFilled(row, col, n)
             drawSticks(filled)
             translate(40, 0)
 
         }
-
         translate(-400, 40)
     }
 }
