@@ -43,10 +43,10 @@ function setup() {
     createCanvas(500, 500)
     background("white")
 
-    n = floor(random(501))
+    n = floor(random(6))
     textAlign(CENTER)
     textSize(25)
-    text(`Random number: ${n} / 500`, width / 2, 30)
+    text(`Random number: ${n} / 5`, width / 2, 30)
 
     //Striche
     translate(50, 80)
@@ -63,7 +63,7 @@ function setup() {
 }
 
 function shouldFilled(row: number, col: number, n: number) {
-    let index = ((row * 10 + col) % 5) / 5
+    let index = row * 10 + col
 
     if (index < n) {
         return true
@@ -72,24 +72,35 @@ function shouldFilled(row: number, col: number, n: number) {
     }
 }
 
-function drawSticks(filled: boolean) {
+function drawSticks(filled: number) {
     strokeWeight(2)
+    // if (filled === 1) {
+    //     stroke("steelblue")
+    //     line(0, 5, 0, 35)
+    //     stroke("lightgrey")
+    //     line(5, 5, 5, 35)
+    //     line(10, 5, 10, 35)
+    //     line(15, 5, 15, 35)
+    //     line(0, 15, 25, 15)
+    // }
+    // else if (filled === 2) {
+    //     stroke("steelblue")
+    //     line(0, 5, 0, 35)
+    //     line(5, 5, 5, 35)
+    //     stroke("lightgrey")
+    //     line(10, 5, 10, 35)
+    //     line(15, 5, 15, 35)
+    //     line(0, 15, 25, 15)
+    // }
+
     if (filled) {
         stroke("steelblue")
     } else {
         stroke("lightgrey")
     }
-
-
-
-
-
-        line(0, 5, 0, 35)
-        line(5, 5, 5, 35)
-        line(10, 5, 10, 35)
-        line(15, 5, 15, 35)
-
-        line(0, 15, 25, 15)
-
+    line(0, 5, 0, 35)
+    line(5, 5, 5, 35)
+    line(10, 5, 10, 35)
+    line(15, 5, 15, 35)
+    line(0, 15, 25, 15)
 }
-
