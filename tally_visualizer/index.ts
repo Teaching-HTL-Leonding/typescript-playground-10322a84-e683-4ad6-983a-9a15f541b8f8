@@ -63,7 +63,7 @@ function setup() {
 }
 
 function shouldFilled(row: number, col: number, n: number) {
-    let index = (row * 10 + col) / 5
+    let index = ((row * 10 + col) % 5) / 5
 
     if (index < n) {
         return true
