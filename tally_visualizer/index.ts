@@ -35,6 +35,8 @@
 // }
 
 
+
+
 let n
 
 function setup() {
@@ -60,8 +62,8 @@ function setup() {
     }
 }
 
-function shouldFilled(row, col, n) {
-    let index = row * 10 + col
+function shouldFilled(row: number, col: number, n: number) {
+    let index = (row * 10 + col) / 5
 
     if (index < n) {
         return true
@@ -70,15 +72,16 @@ function shouldFilled(row, col, n) {
     }
 }
 
-function drawSticks(filled) {
-strokeWeight(2)
+function drawSticks(filled: boolean) {
+    strokeWeight(2)
     if (filled) {
         stroke("steelblue")
     } else {
-        stroke("black")
+        stroke("lightgrey")
     }
 
-  
+
+
 
 
         line(0, 5, 0, 35)
