@@ -1,16 +1,17 @@
 function setup() {
-  createCanvas(200, 200);
+  createCanvas(400, 200);
   background("lightgray");
 
+  const dice1 = floor(random(1, 7))
+  const dice2 = floor(random(1, 7))
 
-  drawDice()
+  drawDomino(dice1, dice2)
 }
 
-function drawDice() {
+function drawDice(dice: number) {
   const dicePointDiameter: number = 30; // Size of a dot
   const diceSize = 200; // size of dice (width and height)
 
-  const dice = floor(random(1, 7));
 
   // draw black dice surface
   fill("black");
@@ -34,4 +35,20 @@ function drawDice() {
     circle(diceSize / 4, diceSize / 2, dicePointDiameter);
     circle(3 * diceSize / 4, diceSize / 2, dicePointDiameter);
   }
+}
+
+function drawDomino(dice1: number, dice2: number) {
+  const diceSize = 200
+  fill("black")
+  noStroke()
+
+  rect(0, 0, diceSize, diceSize)
+  rect(diceSize, 0, diceSize, diceSize)
+
+  //Erstes Quadrat
+  drawDice(dice1)
+
+  //Zweites Quadrat
+  translate(diceSize, 0)
+  drawDice(dice2)
 }
