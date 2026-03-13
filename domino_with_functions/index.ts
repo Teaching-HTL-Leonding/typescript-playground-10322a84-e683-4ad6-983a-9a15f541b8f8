@@ -12,7 +12,6 @@ function drawDice(dice: number) {
   const dicePointDiameter: number = 30; // Size of a dot
   const diceSize = 200; // size of dice (width and height)
 
-
   // draw black dice surface
   fill("black");
   noStroke();
