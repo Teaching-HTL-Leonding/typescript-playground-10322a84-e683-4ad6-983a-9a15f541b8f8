@@ -25,15 +25,20 @@ function setup() {
   // 6: Lucky charm emoji 🍀
 
 
+
   let message: string
+  stroke("white")
+  strokeWeight(2)
+  rectMode(CENTER)
+
   switch(symbol) {
-    case 1: message = "□"
+    case 1: rect(centerX, centerY, 80, 80)
     break
 
-    case 2: message = "○"
+    case 2: circle(centerX, centerY, 80)
     break
 
-    case 3: message = "△"
+    case 3: triangle(width/2, height/2 - 30, width/2 + 30, height/2 + 30, width/2 - 30, height/2 + 30)
     break
 
     case 4: message = "⭐"
