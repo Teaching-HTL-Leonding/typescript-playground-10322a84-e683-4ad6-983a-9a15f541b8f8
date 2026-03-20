@@ -6,11 +6,6 @@ function setup() {
         drawDomino(i, i + 1)
         translate(400, 0)
     }
-
-    const s1 = floor(random(1, 7))
-    const s2 = floor(random(1, 7))
-
-    drawDomino(s1, s2)
 }
 
 function drawSymbol(symbol: number) {
