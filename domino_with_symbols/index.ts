@@ -2,6 +2,7 @@ function setup() {
   createCanvas(400, 200);
   background("lightgray");
 
+
   const s1 = floor(random(1, 7))
   const s2 = floor(random(1, 7))
 
@@ -77,8 +78,24 @@ function drawDomino(s1: number, s2: number) {
   rect(0, 0, diceSize, diceSize)
   rect(diceSize, 0, diceSize, diceSize)
 
+  //Erstes Quadrat
   drawSymbol(s1)
 
+  //Zweites Quadrat
   translate(diceSize, 0)
   drawSymbol(s2)
+
+  //Trennstrich Mitte
+  translate(-diceSize, 0)
+  stroke("white")
+  strokeWeight(5)
+  line(200, 30, 200, 170)
+
+  //Rahmen
+  stroke("lightgrey")
+  strokeWeight(15)
+  line(0, 0, 400, 0)
+  line(400, 0, 400, 200)
+  line(400, 200, 0, 200)
+  line(0, 200, 0, 0)
 }
