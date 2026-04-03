@@ -21,7 +21,6 @@ function draw() {
   for (let i = 0; i < circles_x.length; i++) {
     circle(circles_x[i], circles_y[i], circles_diameter[i]);
   }
-
 }
 
 function addRandomCircle() {
