@@ -12,7 +12,7 @@ function setup() {
   createCanvas(300, 300);
 
   addRandomCircle()
-  //setInterval(addRandomCircle, 3000)
+  setInterval(addRandomCircle, 3000)
 }
 
 function draw() {
