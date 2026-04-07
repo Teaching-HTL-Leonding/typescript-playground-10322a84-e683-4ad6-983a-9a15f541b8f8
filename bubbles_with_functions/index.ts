@@ -12,8 +12,15 @@ function setup() {
   createCanvas(300, 300);
 
   addRandomCircle()
-  setInterval(addRandomCircle, 3000)
+  setInterval(addRandomCircle, waiting_time)
 
+  setInterval(change_level_interval, 10000)
+  
+}
+
+function change_level_interval() {
+  waiting_time /= 2
+  setInterval(addRandomCircle, waiting_time)
 }
 
 function draw() {
@@ -22,12 +29,11 @@ function draw() {
   for (let i = 0; i < circles_x.length; i++) {
     circle(circles_x[i], circles_y[i], circles_diameter[i]);
   }
-  
+
   fill("white")
   textAlign(CENTER)
   textSize(25)
   text(`Points: ${points}`, 60, 30)
-
 }
 
 
@@ -55,12 +61,6 @@ function isInside(x: number, y: number, circle_index: number): boolean {
 }
 
 function mouseClicked() {
-  /*
-  if(m < circles_diameter[circle_index] / 2) {
-    console.log("mouseclick war im kreis")
-  }
-  */
-
 
   for (let i = 0; i < circles_x.length; i++) {
 
@@ -68,20 +68,12 @@ function mouseClicked() {
 
     if (isInsideCircle == true) {
       circles_x.splice(i, 1)
-
+      circles_y.splice(i, 1)
+      circles_diameter.splice(i, 1)
+      points += 1
     }
+
   }
-
-
-
-  // console.log("Maus wurde betätigt")
-
-  // let isInsideTemp = isInside(mouseX, mouseY, 0)
-
-  // if (isInsideTemp == true) {
-  //   console.log("Mausklick ist im Kreis")
-  // }
-  // else {
-  //   console.log("Mausklick ist nicht im Kreis")
-  // }
 }
+
+function 
