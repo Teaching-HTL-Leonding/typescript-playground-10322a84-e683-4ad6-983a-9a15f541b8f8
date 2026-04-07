@@ -18,7 +18,9 @@ function setup() {
 
 function change_level_interval() {
   waiting_time /= 2
-  setInterval(addRandomCircle, waiting_time)
+
+  clearInterval(circle_interval)
+  circle_interval = setInterval(addRandomCircle, waiting_time)
 }
 
 function draw() {
@@ -39,11 +41,11 @@ function draw() {
 
 function addRandomCircle() {
   const center_x = random(width)
-  const center_y = random(height)
-  const diameter = random(10, 50)
+  const center_y = random(10, 50)
 
   circles_x.push(center_x);
-  circles_y.push(center_y);
+  circles_y.push(c= random(height)
+  const diameter enter_y);
   circles_diameter.push(diameter);
 }
 
