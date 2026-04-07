@@ -12,10 +12,8 @@ function setup() {
   createCanvas(300, 300);
 
   addRandomCircle()
-  setInterval(addRandomCircle, waiting_time)
-
-  setInterval(change_level_interval, 10000)
-  
+  circle_interval = setInterval(addRandomCircle, waiting_time)
+  level_interval = setInterval(change_level_interval, 10000)
 }
 
 function change_level_interval() {
@@ -34,6 +32,8 @@ function draw() {
   textAlign(CENTER)
   textSize(25)
   text(`Points: ${points}`, 60, 30)
+
+  gameover()
 }
 
 
@@ -76,4 +76,15 @@ function mouseClicked() {
   }
 }
 
-function 
+function gameover() {
+
+  if(circles_x.length > 10) {
+    clearInterval(circle_interval)
+    clearInterval(level_interval)
+
+    fill("yellow")
+    text(`Game over, Final Score: ${points}`, 150, 150)
+  }
+
+
+}
