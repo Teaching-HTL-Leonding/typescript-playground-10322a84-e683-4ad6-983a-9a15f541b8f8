@@ -41,12 +41,12 @@ function draw() {
 
 function addRandomCircle() {
   const center_x = random(width)
-  const center_y = random(10, 50)
+  const center_y = random(height)
+  const diameter = random(10, 50)
 
-  circles_x.push(center_x);
-  circles_y.push(c= random(height)
-  const diameter enter_y);
-  circles_diameter.push(diameter);
+  circles_x.push(center_x)
+  circles_y.push(center_y)
+  circles_diameter.push(diameter)
 }
 
 function isInside(x: number, y: number, circle_index: number): boolean {
@@ -87,6 +87,5 @@ function gameover() {
     fill("yellow")
     text(`Game over, Final Score: ${points}`, 150, 150)
   }
-
 
 }
