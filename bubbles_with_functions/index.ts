@@ -13,6 +13,7 @@ function setup() {
 
   addRandomCircle()
   setInterval(addRandomCircle, 3000)
+
 }
 
 function draw() {
@@ -21,6 +22,12 @@ function draw() {
   for (let i = 0; i < circles_x.length; i++) {
     circle(circles_x[i], circles_y[i], circles_diameter[i]);
   }
+  
+  fill("white")
+  textAlign(CENTER)
+  textSize(25)
+  text(`Points: ${points}`, 60, 30)
+
 }
 
 
@@ -54,14 +61,27 @@ function mouseClicked() {
   }
   */
 
-  console.log("Maus wurde betätigt")
 
-  let isInsideTemp = isInside(mouseX, mouseY, 0)
+  for (let i = 0; i < circles_x.length; i++) {
 
-  if(isInsideTemp == true) {
-    console.log("Mausklick ist im Kreis")
+    let isInsideCircle = isInside(mouseX, mouseY, i)
+
+    if (isInsideCircle == true) {
+      circles_x.splice(i, 1)
+
+    }
   }
-  else {
-    console.log("Mausklick ist nicht im Kreis")
-  }
+
+
+
+  // console.log("Maus wurde betätigt")
+
+  // let isInsideTemp = isInside(mouseX, mouseY, 0)
+
+  // if (isInsideTemp == true) {
+  //   console.log("Mausklick ist im Kreis")
+  // }
+  // else {
+  //   console.log("Mausklick ist nicht im Kreis")
+  // }
 }
