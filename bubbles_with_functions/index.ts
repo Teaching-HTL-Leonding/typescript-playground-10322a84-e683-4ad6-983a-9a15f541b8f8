@@ -35,8 +35,8 @@ function addRandomCircle() {
 }
 
 function isInside(x: number, y: number, circle_index: number): boolean {
-  let xi = circles_x[0] - x
-  let yi = circles_y[0] - y
+  let xi = circles_x[circle_index] - x
+  let yi = circles_y[circle_index] - y
 
   let zi = sqrt(xi * xi + yi * yi)
 
@@ -64,6 +64,4 @@ function mouseClicked() {
   else {
     console.log("Mausklick ist nicht im Kreis")
   }
-
-
 }
