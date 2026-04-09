@@ -24,20 +24,24 @@ function change_level_interval() {
 }
 
 function draw() {
-  background("black")
+  background("black");
 
-  for (let i = 0; i < circles_x.length; i++) {
-    circle(circles_x[i], circles_y[i], circles_diameter[i]);
+  for(let i = 0; i < circles_x.length; i++) {
+    noFill()
+    stroke("white")
+    strokeWeight(2)
+
+    circle(circles_x[i], circles_y[i], circles_diameter[i])
   }
 
   fill("white")
+  strokeWeight(0)
   textAlign(CENTER)
   textSize(25)
   text(`Points: ${points}`, 60, 30)
 
   gameover()
 }
-
 
 function addRandomCircle() {
   const center_x = random(width)
@@ -49,13 +53,13 @@ function addRandomCircle() {
   circles_diameter.push(diameter)
 }
 
-function isInside(x: number, y: number, circle_index: number): boolean {
+function isInside(x: number, y: number, circle_index) {
   let xi = circles_x[circle_index] - x
   let yi = circles_y[circle_index] - y
 
   let zi = sqrt(xi * xi + yi * yi)
 
-  if (zi <= circles_diameter[circle_index] / 2) {
+  if(zi <= circles_diameter[circle_index] / 2)  {
     return true
   } else {
     return false
@@ -64,28 +68,27 @@ function isInside(x: number, y: number, circle_index: number): boolean {
 
 function mouseClicked() {
 
-  for (let i = 0; i < circles_x.length; i++) {
-
+  for(let i = 0; i < circles_x.length; i++) {
     let isInsideCircle = isInside(mouseX, mouseY, i)
 
-    if (isInsideCircle == true) {
+    if(isInsideCircle == true) {
       circles_x.splice(i, 1)
       circles_y.splice(i, 1)
       circles_diameter.splice(i, 1)
+
       points += 1
     }
-
   }
+
 }
 
 function gameover() {
-
   if(circles_x.length > 10) {
     clearInterval(circle_interval)
     clearInterval(level_interval)
 
+    background("black")
     fill("yellow")
     text(`Game over, Final Score: ${points}`, 150, 150)
   }
-
 }
