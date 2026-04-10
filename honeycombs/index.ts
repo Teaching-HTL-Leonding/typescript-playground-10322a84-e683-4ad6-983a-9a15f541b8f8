@@ -34,10 +34,11 @@ function setup() {
         drawHexagon()
     }
 
-    // for (let a = 0; a < 5; a++) {
-    //     translate(30, 50)
-    //     drawHexagon()
-    // }
+    translate(-540, 55)
+    for (let a = 0; a < 6; a++) {
+        translate(90, 0)
+        drawHexagon()
+    }
 
 
     // for (let z = 0; z < 5; z++) {
