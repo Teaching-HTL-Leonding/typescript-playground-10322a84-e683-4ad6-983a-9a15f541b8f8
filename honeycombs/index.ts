@@ -28,31 +28,31 @@ function setup() {
         drawHexagon()
     }
 
-    translate(-540, 55)
+    translate(-540, 50)
     for (let y = 0; y < 5; y++) {
         translate(90, 0)
         drawHexagon()
     }
 
-    translate(-540, 55)
+    translate(-540, 50)
     for (let a = 0; a < 6; a++) {
         translate(90, 0)
         drawHexagon()
     }
 
-    translate(-540, 55)
+    translate(-540, 50)
     for (let z = 0; z < 6; z++) {
         translate(90, 0)
         drawHexagon()
     }
 
-    translate(-540, 55)
+    translate(-540, 50)
     for (let b = 0; b < 6; b++) {
         translate(90, 0)
         drawHexagon()
     }
 
-    translate(-540, 55)
+    translate(-540, 50)
     for (let c = 0; c < 6; c++) {
         translate(90, 0)
         drawHexagon()
@@ -68,7 +68,7 @@ function drawHexagon() {
     line(45, 50, 20, 50)
     line(20, 50, 0, 25)
     line(0, 25, 20, 0)
-    drawHexagon2()
+    // drawHexagon2()
 }
 
 
