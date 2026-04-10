@@ -28,10 +28,10 @@ function setup() {
         drawHexagon()
     }
 
-    translate(-450, 10)
+    translate(-450, 0)
 
     for (let y = 0; y < 5; y++) {
-        translate(10, 50)
+        translate(0, 50)
         drawHexagon()
     }
 
