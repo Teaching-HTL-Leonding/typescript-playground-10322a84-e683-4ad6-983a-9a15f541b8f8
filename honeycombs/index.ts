@@ -23,20 +23,37 @@ function setup() {
 
     drawHexagon()
 
+    for (let x = 0; x < 5; x++) {
+        translate(90, 0)
+        drawHexagon()
+    }
+
+    for(let y = 0; y < 5; y++) {
+        translate(0, 50)
+        drawHexagon()
+    }
+
 }
 
-for(let i = 0; i < 10; i++) {
-    drawHexagon(xCoord: number)
-}
 
 function drawHexagon() {
-    stroke("yellow");
+    stroke("yellow")
     line(20, 0, 45, 0)
     line(45, 0, 65, 25)
     line(65, 25, 45, 50)
     line(45, 50, 20, 50)
     line(20, 50, 0, 25)
     line(0, 25, 20, 0)
+
+    drawYAchse()
 }
 
 
+function drawYAchse() {
+
+    // for (let y = 0; y < 5; y++) {
+    //     translate(0, 50)
+    //     drawHexagon()
+    // }
+
+}
