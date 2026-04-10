@@ -72,7 +72,7 @@ function drawHexagon() {
 }
 
 
-function drawHexagon2() {
-    // translate(0, 70)
-    // drawHexagon()
-}
+// function drawHexagon2() {
+//     // translate(0, 70)
+//     // drawHexagon()
+// }
