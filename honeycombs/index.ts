@@ -51,6 +51,12 @@ function setup() {
         translate(90, 0)
         drawHexagon()
     }
+
+    translate(-540, 55)
+    for (let c = 0; c < 6; c++) {
+        translate(90, 0)
+        drawHexagon()
+    }
 }
 
 
