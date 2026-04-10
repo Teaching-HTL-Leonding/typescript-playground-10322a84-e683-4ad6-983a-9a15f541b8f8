@@ -29,10 +29,14 @@ function setup() {
     }
 
     for (let y = 0; y < 5; y++) {
-        translate(-90, 10)
+        translate(-450, 50)
         drawHexagon()
     }
 
+    for (let z = 0; z < 5; z++) {
+        translate(-90, 50)
+        drawHexagon()
+    }
 }
 
 
@@ -44,11 +48,11 @@ function drawHexagon() {
     line(45, 50, 20, 50)
     line(20, 50, 0, 25)
     line(0, 25, 20, 0)
-    drawYAchse()
+    drawHexagon2()
 }
 
 
-function drawYAchse() {
-    // translate(0, 50)
+function drawHexagon2() {
+    // translate(0, 70)
     // drawHexagon()
 }
