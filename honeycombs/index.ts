@@ -29,16 +29,21 @@ function setup() {
     }
 
     translate(-450, 0)
-
     for (let y = 0; y < 5; y++) {
         translate(0, 50)
         drawHexagon()
     }
 
-    for (let z = 0; z < 5; z++) {
-        translate(-90, 50)
-        drawHexagon()
-    }
+    // for (let a = 0; a < 5; a++) {
+    //     translate(30, 50)
+    //     drawHexagon()
+    // }
+
+
+    // for (let z = 0; z < 5; z++) {
+    //     translate(-90, 50)
+    //     drawHexagon()
+    // }
 }
 
 
